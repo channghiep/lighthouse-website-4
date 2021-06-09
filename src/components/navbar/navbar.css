@@ -1,0 +1,39 @@
+.navbar-body {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: all .25s ease-in-out;
+  }
+  
+.nav-logo {
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+  
+.nav-logo path {
+    fill: #FFF;
+    transition: fill .25s ease-in-out;
+  }
+  
+.nav-logo:hover path {
+    fill: #20E9A9;
+  }
+
+.navbar-body.scroll .nav-logo path {
+  fill: transparent;
+}
+  
+@media screen and (max-width: 768px) {
+
+  .nav-logo {
+    width: 40px;
+    top: 15px;
+    left: 20px;
+  }
+
+}

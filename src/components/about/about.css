@@ -1,0 +1,474 @@
+/* ===== LANDING DIV ===== */
+
+.about-body {
+    width: 100%;
+}
+
+.about-landing {
+    width: 100%;
+    height: 100vh;
+    min-height: 900px;
+    color: #FFF;
+    background-image: url(../assets/lighthouse-abt-banner.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #2B35A1;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-intro {
+    /* position: absolute;
+    top: 400px;
+    left: 30px; */
+    padding-left: 30px;
+}
+
+.about-intro h1 {
+    font-size: 72px;
+    color: #20E9A9;
+    margin-bottom: 20px;
+    width: 85%;
+    max-width: 1400px;
+}
+
+.about-intro p {
+    font-size: 18px;
+    line-height: 30px;
+    width: 40%;
+    max-width: 1000px;
+}
+
+.about-intro p span {
+    font-family: 'Russo One', sans-serif;
+}
+
+.nav-img {
+    width: 60vw;
+    height: auto;
+    
+    position: absolute;
+    right: -10%;
+    bottom: -10%;
+
+    fill: #2689A6;
+    mix-blend-mode: lighten;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .about-landing {
+        min-height: 1000px;
+        justify-content: start;
+    }
+
+    .about-intro {
+        margin-top: 18vh;
+    }
+
+    .about-intro h1 {
+        font-size: 48px;
+    }
+
+    .about-intro p {
+        width: 60%;
+    }
+
+    .nav-img {
+        height: 60vh;
+        width: auto;
+        bottom: -5%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .about-landing {
+        min-height: 800px;
+    }
+    
+    .about-intro {
+        padding-left: 20px;
+    }
+
+    .about-intro h1 {
+        font-size: 36px;
+    }
+
+    .about-intro p {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .about-landing {
+        min-height: auto;
+    }
+
+    .about-intro {
+        margin-top: 100px;
+    }
+
+    .about-intro h1 {
+        width: 90%;
+    }
+
+    .about-intro p {
+        width: 90%;
+    }
+
+    .nav-img {
+        height: auto;
+        width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .about-intro h1 {
+        font-size: 24px;
+    }
+
+    .about-intro p {
+        line-height: 24px;
+    }
+
+}
+
+/* ===== MEMBERS DIV ===== */
+
+.about-members {
+    width: 100%;
+    height: calc(100vh - 260px);
+    min-height: 640px;
+    background-color: #EAF9D9;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-members h1 {
+    font-size: 72px;
+    color: #2B35A1;
+    margin-bottom: 30px;
+}
+
+.member-intro {
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.member-wrapper {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-wrapper img {
+    width: 60%;
+}
+
+.member-wrapper:hover img {
+    transform: scale(1.15);
+    transition: transform .25s ease-in-out;
+}
+
+.member-wrapper p {
+    font-family: 'Russo One', sans-serif;
+    color: #2B35A1;
+}
+
+.member-name {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.member-role {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .member-intro {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .about-members {
+        min-height: 740px;
+    }
+
+    .about-members h1 {
+        font-size: 48px;
+        margin: 0;
+    }
+
+    .member-intro {
+        height: 70%;
+    }
+
+    .member-name {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .about-members {
+        height: auto;
+        min-height: auto;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .about-members h1 {
+        font-size: 36px;
+    }
+
+    .member-intro {
+        flex-direction: column;
+    }
+
+    .member-wrapper {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .member-wrapper img {
+        width: 200px;
+    }
+
+    .member-name {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    
+    .member-role {
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    .member-denis {
+        order: -1;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .about-members h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .member-wrapper img {
+        width: 50%;
+    }
+
+    .member-name {
+        text-align: center;
+    }
+
+}
+
+/* ===== BANNER DIV ===== */
+
+.about-banner {
+    height: 180px;
+    background-color: #FFF;
+    padding-left: 30px;
+
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index:-1;
+}
+
+.about-banner h1 {
+    font-size: 72px;
+    color: #20E9A9;
+    margin-right: 30px;
+}
+
+.about-banner div {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.about-banner p {
+    margin-top: 24px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 36px;
+    color: #2B35A1;
+}
+
+.about-banner img {
+    position: absolute;
+    right: 30px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .about-banner img {
+        right: -160px;
+    }
+
+}
+
+@media screen and (max-width: 1270px) {
+
+    .about-banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-banner h1 {
+        margin-top: 20px;
+    }
+
+    .about-banner p {
+        margin-top: 0;
+    }
+    
+    .about-banner img {
+        width: 400px;
+        top: -120px;
+        right: 0px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .about-banner h1 {
+        margin-top: 40px;
+        font-size: 48px;
+    }
+
+    .about-banner p {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .about-banner h1 {
+        margin-top: 50px;
+        font-size: 36px;
+    }
+
+    .about-banner p {
+        font-size: 24px;
+    }
+
+    .about-banner img {
+        right: -140px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .about-banner {
+        height: 300px;
+    }
+
+    .about-banner img {
+        width: 300px;
+        right: 10px;
+        top: auto;
+        bottom: -110px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .about-banner h1 {
+        font-size: 24px;
+    }
+
+    .about-banner div {
+        flex-wrap: wrap;
+    }
+
+    .about-banner p {
+        width: 90%;
+    }
+
+    .about-banner img {
+        right: -80px;
+    }
+
+}
+
+/* ===== SMOOTH SCROLL BTN ===== */
+
+.top-scroll-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #FFF;
+    box-shadow: 2px 4px 4px rgba(68, 68, 68, .5);
+    border-radius: 20px;
+    
+    position: fixed;
+    bottom: 20px;
+    /* left: auto;
+    right: 30px; */
+    z-index: 1;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-body .top-scroll-btn {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+.about-body.scroll .top-scroll-btn {
+    opacity: .5;
+    transition: opacity .25s ease-in-out;
+}
+
+.about-body.scroll .top-scroll-btn:hover {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+}
+
+.top-scroll-btn svg {
+    transform: rotate(-90deg);
+    fill: #2B35A1;
+    margin-left: 2px;
+}

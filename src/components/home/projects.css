@@ -1,0 +1,467 @@
+/* ===== PROJECTS DIV ===== */
+
+.projects-body {
+    width: 100%;
+    height: 100vh;
+    min-height: 900px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    background: linear-gradient(180deg, #277CA4 0%, #2689A5 100%);
+}
+
+.project-div {
+    width: 25%;
+    height: 50%;
+    min-height: 450px;
+    position: relative;
+    background: linear-gradient(180deg, rgb(45, 164, 197) 0%, rgb(124, 196, 207) 100%);
+}
+
+/* ===== IMAGES ===== */
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-inclass .project-img {
+    mix-blend-mode: color-burn;
+}
+
+.project-gover .project-img {
+    mix-blend-mode: darken;
+}
+
+.project-tnews .project-img {
+    mix-blend-mode: color-burn;
+}
+
+.project-img::before {
+    background-color: #58A4B0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+  .project-img::after {
+    background-color: #2B35A1;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.project-img img {
+    height: 100%;
+}
+
+/* ===== LOGOS ===== */
+
+.project-logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    fill: #FFF;
+    width: auto;
+
+    transform: translateY(0);
+    transition: transform .25s ease-in-out;
+}
+
+.greenfill-logo path {
+    fill: #FFF;
+}
+
+.inclass-logo {
+    top: 25%;
+    height: 36px;
+}
+
+.greenfill-logo {
+    top: 23%;
+    height: 72px;
+}
+
+.gover-logo {
+    top: 26%;
+    height: 48px;
+}
+
+.tnews-logo {
+    top: 24%;
+    height: 40px;
+}
+
+/* ===== TEXTS ===== */
+
+.project-describe {
+    font-size: 18px;
+    line-height: 24px;
+    color: transparent;
+
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+
+    width: 80%;
+    margin: auto;
+
+    transform:  translateY(100px);
+    transition: all .25s ease-in-out;
+}
+
+.project-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 20px;
+    margin: auto;
+
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+
+    opacity: 0;
+    transform:  translateY(100px);
+    transition: all .25s ease-in-out;
+}
+
+.project-btn p {
+    font-family: 'Russo One', sans-serif;
+    margin-right: 10px;
+}
+
+.inclass-btn p {
+    color: #0A2239;
+}
+
+.greenfill-btn p {
+    color: #6DA340;
+}
+
+.gover-btn p {
+    color: #EE7667;
+}
+
+.tnews-btn p {
+    color: #DE3F42;
+}
+
+.inclass-btn svg {
+    fill: #0A2239;
+}
+
+.greenfill-btn svg {
+    fill: #6DA340;
+}
+
+.gover-btn svg {
+    fill: #EE7667;
+}
+
+.tnews-btn svg {
+    fill: #DE3F42;
+}
+
+.project-div .project-btn svg {
+    opacity: 0;
+}
+
+/* ===== HOVER EFFECT ===== */
+
+.project-div:hover .project-img {
+    mix-blend-mode: normal;
+    transition: all .25s ease-in-out;
+}
+
+.project-div:hover .project-img::before,
+.project-div:hover .project-img::after {
+    background-color: transparent;
+    transition: all .25s ease-in-out;
+}
+
+.project-div:hover .project-img img {
+    height: 140%;
+    transform: translateX(-100px);
+    transition: all 1s ease-in-out;
+}
+
+/* ===== HOVER LOGOS ===== */
+
+.project-div:hover .project-logo {
+    transform: translateY(-50px);
+    transition: transform .25s ease-in-out;
+}
+
+.project-div:hover .inclass-logo {
+    fill: #0A2239;
+}
+
+.project-div:hover .greenfill-logo path {
+    fill: #6DA340;
+    /* transition: all .25s ease-in-out; */
+}
+
+.project-div:hover .greenfill-logo #Path_79,
+.project-div:hover .greenfill-logo #Path_80 {
+    fill: #383A37;
+}
+
+.project-div:hover .gover-logo {
+    fill: #EE7667;
+}
+
+.project-div:hover .tnews-logo {
+    fill: #DE3F42;
+}
+
+.project-div:hover .tnews-logo #Group_2 {
+    fill: #1D1E18;
+}
+
+/* ===== HOVER TEXTS ===== */
+
+.project-div:hover .project-describe {
+    transform:  translateY(0);
+    color: #383A37;
+}
+
+.project-div:hover .project-btn {
+    opacity: 1;
+    transform:  translateY(0);
+    transition: all .25s ease-in-out;
+}
+
+.project-div:hover .project-btn svg {
+    opacity: 0;
+    transform:  translateX(-10px);
+    transition: all .25s ease-in-out;
+}
+
+.project-div:hover .project-btn:hover svg {
+    opacity: 1;
+    transform:  translateX(0);
+    transition: all .25s ease-in-out;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+@media screen and (max-width: 1560px) {
+
+    .projects-body {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 36% 36%;
+    }
+
+    .project-div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .inclass-logo {
+        height: 24px;
+    }
+    
+    .greenfill-logo {
+        height: 54px;
+    }
+    
+    .gover-logo {
+        height: 30px;
+    }
+    
+    .tnews-logo {
+        height: 28px;
+    }
+
+    .project-describe {
+        top: 140px;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .projects-body {
+        min-height: 1000px;
+        grid-template-columns: 50% 50%;
+    }
+
+    .project-describe {
+        top: 180px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .projects-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-div {
+        height: 25%;
+        min-height: 250px;
+    }
+
+    /* ===== IMAGES ===== */
+
+    .project-img img {
+        width: 1050px;
+        height: auto;
+        margin-top: -200px;
+    }
+
+    /* ===== LOGOS ===== */
+
+    .project-logo {
+        left: 20px;
+        top: 30px;
+        margin: 0;
+    }
+
+    .inclass-logo {
+        height: 18px;
+    }
+
+    .greenfill-logo {
+        height: 36px;
+    }
+
+    .gover-logo {
+        height: 24px;
+    }
+
+    .tnews-logo {
+        height: 20px;
+    }
+
+    /* ===== TEXTS ===== */
+
+    .project-describe {
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFF;
+        width: 50%;
+        margin: 0;
+
+        top: 80px;
+        left: 20px;
+
+        transform:  translateY(0);
+        transition: transform;
+        opacity: 1;
+    }
+
+    .project-btn {
+        width: 50%;
+        margin: 0;
+
+        top: 168px;
+        left: 20px;
+
+        transform:  translateY(0);
+    }
+
+    .project-btn p {
+        color: #2B35A1;
+    }
+
+    .project-div .project-btn svg {
+        display: none;
+    }
+
+    /* ===== HOVER EFFECT ===== */
+    
+    .project-div:hover .project-img::before {
+        background-color: #58A4B0;
+    }
+      
+    .project-div:hover .project-img::after {
+        background-color: #2B35A1;
+    }
+    
+    .project-div:hover .project-img img {
+        transform: translateX(0);
+
+        width: 1050px;
+        height: auto;
+        margin-top: -200px;
+    }
+
+    /* ===== HOVER LOGOS ===== */
+
+    .project-div:hover .project-logo {
+        transform: translateY(0px);
+        fill: #2B35A1;
+        /* transition: fill .25s ease-in-out; */
+    }
+    
+    .project-div:hover .greenfill-logo path,
+    .project-div:hover .greenfill-logo #Path_79,
+    .project-div:hover .greenfill-logo #Path_80,
+    .project-div:hover .tnews-logo #Group_2 {
+        fill: #2B35A1;
+        /* transition: fill .25s ease-in-out; */
+    }
+
+    /* ===== HOVER TEXTS ===== */
+
+    .project-div:hover .project-describe {
+        transform:  translateY(0);
+        color: #383A37;
+        transition: transform;
+    }
+
+    .project-div:hover .project-btn p {
+        opacity: 1;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    /* .homepage-projects {
+        min-height: initial;
+    }
+
+    .project-div {
+        min-height: initial;
+    } */
+    
+    .project-describe {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+
+    .project-btn {
+        top: 184px;
+    }
+
+}
